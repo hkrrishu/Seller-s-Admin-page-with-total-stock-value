@@ -1,38 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seller's Admin Page</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="container" >
+      <h1>Seller's Admin Page</h1>
 
-    <h1>Seller's Admin Page</h1>
-
-    <form id="productForm">
-
+      <form id="productForm">
         <label>Selling Price:</label>
-        <input type="number" id="sellingPrice">
+        <input type="number" id="sellingPrice" />
 
         <label>Product Name:</label>
-        <input type="text" id="productName">
+        <input type="text" id="productName" />
 
         <button type="submit">Add Product</button>
+      </form>
 
-    </form>
+      <h2>Products</h2>
 
-    <h2>Products</h2>
+      <ul id="productList"></ul>
 
-    <ul id="productList"></ul>
+      <h3>Total Value Worth of Products: Rs <span id="totalValue">0</span></h3>
+    </div>
 
-    <h3>Total Value Worth of Products: Rs <span id="totalValue">0</span></h3>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
-
-</body>
-
+  </body>
 </html>
